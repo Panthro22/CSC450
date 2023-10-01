@@ -9,11 +9,14 @@ int acceptableInteger()
   char userInput;
   string numString;
   int finalInput;
+
+  cin.width(250); // Set the input width to 250 characters (max)
+
   while (true) // Loop through until the user enters an all integers for input
                // then store the integer value in finalInput
   {
     cin >> userInput;       // Get the user input
-    if (isdigit(userInput)) // Check if the user input is a digit
+    if (isdigit(userInput)) // Check if the user input is a digit, this helps to reduce code injection
     {
       numString += userInput; // If it is a digit, add it to the string
     }
@@ -21,9 +24,9 @@ int acceptableInteger()
     {
       cout << "Invalid input. Please enter an integer value." << endl;
       cout << "Integer: ";
-      numString = "";          // Clear the string
-      cin.clear();             // Clear the input stream
-      cin.ignore(10000, '\n'); // Ignore the next 10000 characters or until a newline
+      numString = "";        // Clear the string
+      cin.clear();           // Clear the input stream
+      cin.ignore(250, '\n'); // Ignore the next 250 characters or until a newline
     }
     // check if there is newline character in the input stream
     if (cin.peek() == '\n')
