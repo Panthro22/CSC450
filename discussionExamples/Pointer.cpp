@@ -63,10 +63,9 @@ int main()
 
   for (int index = 0; index < MAX; index++)
   {
-    *variable = index; // why does c++ allow this syntax? because it is an array of pointers. so it turned the array into a pointer? yes. without the usual int *ptr = &variable[index]; syntax? yes. where is this information located about this syntax? https://www.tutorialspoint.com/cplusplus/cpp_pointer_to_an_array.htm
-    ptr = variable;
-    ptr++;      // This is correct. You can increment a pointer
-    variable++; // This is incorrect. You cannot increment a variable array as a pointer because it is a constant.
+    *variable = index; // This is correct. You can assign a value to a pointer. This is the same as variable[index] = index;
+    ptr++;             // This is correct. You can increment a pointer
+    variable++;        // This is incorrect. You cannot increment a variable array as a pointer because it is a constant.
   }
 
   return 0;

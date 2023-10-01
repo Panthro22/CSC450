@@ -98,7 +98,11 @@
 		"streambuf": "cpp",
 		"typeinfo": "cpp",
 		"cstring": "cpp",
-		"cstdarg": "cpp"
+		"cstdarg": "cpp",
+		"bitset": "cpp",
+		"ctime": "cpp",
+		"regex": "cpp",
+		"sstream": "cpp"
 	},
 	"C_Cpp.errorSquiggles": "disabled"
 }
