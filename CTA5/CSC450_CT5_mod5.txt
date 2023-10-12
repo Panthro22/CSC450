@@ -1,0 +1,9 @@
+Please be sure to append your data to this text file.
+
+If these first three lines are deleted, then your program is not functioning as expected.
+
+
+If only one line can be entered,
+Second attempt to add a line then to add another...
+We are moving up in the world.
+Added the ! mark into the regex pattern!
